@@ -1,0 +1,56 @@
+name: Проверка исходников
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  windows-installer:
+    name: Windows-установщик
+    runs-on: windows-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Получить исходники
+        uses: actions/checkout@v4
+
+      - name: Установить Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: windows-installer/requirements-build.txt
+
+      - name: Установить закреплённые зависимости
+        run: python -m pip install -r windows-installer/requirements-build.txt
+
+      - name: Проверить синтаксис PowerShell
+        shell: pwsh
+        run: |
+          $files = Get-ChildItem scripts, windows-installer -Filter *.ps1 -Recurse -File
+          foreach ($file in $files) {
+            [void][scriptblock]::Create((Get-Content -LiteralPath $file.FullName -Raw))
+          }
+
+      - name: Запустить модульные и accessibility-тесты
+        shell: pwsh
+        run: |
+          $env:PYTHONPATH = (Resolve-Path windows-installer/src).Path
+          $env:QT_QPA_PLATFORM = 'offscreen'
+          python -m unittest discover -s windows-installer/tests -v
+
+      - name: Проверить SHA-256 встроенных файлов
+        shell: pwsh
+        run: |
+          $env:PYTHONPATH = (Resolve-Path windows-installer/src).Path
+          python windows-installer/src/braille_emotion_installer.py --cli bundle-check

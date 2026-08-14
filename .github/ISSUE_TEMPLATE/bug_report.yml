@@ -1,0 +1,78 @@
+name: Сообщить об ошибке
+description: Ошибка Android-диспетчера или Windows-установщика
+title: "[Ошибка]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Спасибо за точное описание. Перед отправкой удалите из журнала серийный номер устройства, личные пути и имена файлов.
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Компонент
+      options:
+        - Windows-установщик
+        - Android-диспетчер
+        - Мост заводского меню
+        - Сборка из исходников
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Версия
+      placeholder: Например, 2.0.0 или 1.5
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Устройство и система
+      description: Модель eMotion, версия Android и, для EXE, версия Windows.
+      placeholder: Braille eMotion 40 B340, Android 12; Windows 11 64-bit
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Как повторить ошибку
+      description: Перечислите действия по порядку, включая использованные клавиши.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Что должно было произойти
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Что произошло
+      description: Приведите точное сообщение скринридера или программы.
+    validations:
+      required: true
+
+  - type: textarea
+    id: log
+    attributes:
+      label: Очищенный журнал
+      description: Не публикуйте серийный номер, ключи, токены и личные данные.
+      render: text
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Проверка перед отправкой
+      options:
+        - label: Я использую файл из официального релиза либо указал точный коммит собственной сборки.
+          required: true
+        - label: В приложенном тексте нет серийного номера устройства и других личных данных.
+          required: true

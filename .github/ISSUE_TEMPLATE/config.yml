@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Уязвимость безопасности
+    url: https://github.com/andreykadelite/braille-emotion-jailbreak-toolkit/security/advisories/new
+    about: Сообщите об уязвимости приватно, не раскрывая её в обычном issue.

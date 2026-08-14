@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Диспетчер приложений</string>
+    <string name="app_manager_not_installed">Диспетчер приложений не установлен</string>
+
+    <string name="main_menu_title">Диспетчер приложений</string>
+    <string name="main_menu_status">Выберите действие</string>
+    <string name="menu_launch">Выбрать и запустить</string>
+    <string name="menu_uninstall">Удалить</string>
+    <string name="menu_install">Установка приложений</string>
+    <string name="menu_help">Справка и ответственность</string>
+    <string name="menu_exit">Выйти</string>
+
+    <string name="launch_title">Выбрать и запустить</string>
+    <string name="uninstall_title">Удалить приложение</string>
+    <string name="install_title">Установка приложений</string>
+    <string name="launch_window_title">Выбрать и запустить. Приложений: %1$d</string>
+    <string name="uninstall_window_title">Удалить приложение. Доступно: %1$d</string>
+    <string name="install_window_title">Установка приложений. APK: %1$d</string>
+    <string name="scanning_apk_window_title">Установка приложений. Выполняется поиск APK</string>
+    <string name="launch_count">Доступно приложений: %1$d. Список обновляется автоматически.</string>
+    <string name="uninstall_count">Можно удалить приложений: %1$d. Системные приложения SELVAS и HIMS скрыты.</string>
+    <string name="empty_launch_list">Нет доступных для запуска приложений.</string>
+    <string name="empty_uninstall_list">Нет приложений, которые можно безопасно удалить.</string>
+    <string name="scanning_apk_files">Поиск файлов APK в стандартной папке Download…</string>
+    <string name="install_count">APK для установки: %1$d. Папка Download. Некорректных APK пропущено: %2$d.</string>
+    <string name="empty_install_list">В папке Download нет корректных файлов APK.</string>
+    <string name="empty_install_list_with_invalid">В папке Download нет корректных APK. Некорректных файлов пропущено: %1$d.</string>
+    <string name="download_directory_unavailable">Папка Download недоступна. Проверьте накопитель и разрешение на доступ к файлам.</string>
+    <string name="back_to_main_menu">Назад в главное меню</string>
+
+    <string name="application_button_text">%1$s\nПакет: %2$s</string>
+    <string name="apk_button_text">%1$s\nФайл: %2$s</string>
+    <string name="main_action_description">%1$s. Пункт %2$d из %3$d. Нажмите Enter.</string>
+    <string name="launch_action_description">%1$s. Пункт %2$d из %3$d. Нажмите Enter, чтобы запустить. Пакет %4$s.</string>
+    <string name="uninstall_action_description">%1$s. Пункт %2$d из %3$d. Нажмите Enter, чтобы перейти к удалению. Пакет %4$s.</string>
+    <string name="install_action_description">%1$s. APK %2$d из %3$d. Файл %4$s. Пакет %5$s. Версия %6$s. Размер %7$s. Нажмите Enter, чтобы перейти к установке.</string>
+    <string name="back_button_description">Назад в главное меню. Нажмите Enter.</string>
+    <string name="launch_failed">Не удалось запустить %1$s.</string>
+
+    <string name="no_controls_announcement">На этом экране нет доступных пунктов.</string>
+
+    <string name="help_menu_title">Справка и ответственность</string>
+    <string name="help_menu_status">Выберите раздел. Сначала прочитайте «Ответственность и гарантия».</string>
+    <string name="help_menu_window_title">Справка и ответственность. Разделов: %1$d</string>
+    <string name="help_topic_description">%1$s. Раздел %2$d из %3$d. Нажмите Enter, чтобы открыть.</string>
+    <string name="help_article_status">Абзацев: %1$d. Команда «следующий» читает их по одному. Enter повторяет текущий абзац.</string>
+    <string name="help_article_window_title">%1$s. Абзацев: %2$d</string>
+    <string name="help_paragraph_description">Абзац %1$d из %2$d. %3$s Нажмите Enter, чтобы повторить этот абзац.</string>
+    <string name="back_to_help_topics">Назад к разделам справки</string>
+    <string name="back_to_help_topics_description">Назад к разделам справки. Нажмите Enter.</string>
+
+    <string name="help_topic_responsibility">Ответственность и гарантия</string>
+    <string name="help_responsibility_p1">Вы сами решаете, устанавливать или удалять приложение. Все действия выполняются добровольно и на ваш страх и риск.</string>
+    <string name="help_responsibility_p2">Установка сторонних программ меняет программную конфигурацию устройства. Если неисправность свяжут с этими изменениями, производитель или продавец может отказать в бесплатном гарантийном ремонте. Точные правила указаны в гарантийных документах.</string>
+    <string name="help_responsibility_p3">Диспетчер не знает, действует ли гарантия в вашем случае. До внесения изменений проверьте гарантийный талон или спросите продавца и производителя.</string>
+    <string name="help_responsibility_p4">При удалении приложения стираются его локальные данные и настройки. Повторная установка того же APK обычно не возвращает удалённые данные.</string>
+    <string name="help_responsibility_p5">Сторонний APK может оказаться вредоносным, несовместимым с eMotion или недоступным для скринридера. Авторы диспетчера не контролируют содержимое таких файлов и последствия их работы.</string>
+    <string name="help_responsibility_p6">«Продолжить», «ОК», «Установить» и «Обновить» запускают действие только после вашего выбора. Если вы не уверены, нажмите «Отмена», сделайте резервную копию и обратитесь в поддержку.</string>
+
+    <string name="help_topic_before_start">Перед началом работы</string>
+    <string name="help_before_start_p1">Сохраните важные документы и настройки на компьютере или другом носителе. Резервную копию лучше сделать до первого удаления или установки.</string>
+    <string name="help_before_start_p2">Зарядите eMotion или подключите питание. Выключение устройства во время системной установки может оставить приложение в неполном состоянии.</string>
+    <string name="help_before_start_p3">Берите APK из источника, которому доверяете. Если источник публикует контрольную сумму SHA-256, сравните её с суммой скачанного файла.</string>
+    <string name="help_before_start_p4">Проверьте свободное место. На время установки нужен объём для исходного APK и его защищённой копии во внутреннем кэше.</string>
+    <string name="help_before_start_p5">Сохраните исходный APK на компьютере. Он пригодится, если приложение понадобится установить заново после удаления или сброса устройства.</string>
+
+    <string name="help_topic_main_menu">Главное меню</string>
+    <string name="help_main_menu_p1">«Выбрать и запустить» открывает список программ, у которых есть запускаемый экран Android. Список обновляется при каждом открытии.</string>
+    <string name="help_main_menu_p2">«Удалить» показывает только пользовательские приложения, прошедшие защитный фильтр. Системные программы SELVAS и HIMS туда не попадают.</string>
+    <string name="help_main_menu_p3">«Установка приложений» ищет корректные файлы APK в стандартной папке Download и передаёт выбранный файл системному установщику Android.</string>
+    <string name="help_main_menu_p4">«Справка и ответственность» открывает это оглавление. Первый раздел посвящён рискам, остальные объясняют работу диспетчера.</string>
+    <string name="help_main_menu_p5">«Выйти» возвращает заводское меню eMotion. Клавиша Back в главном меню делает то же самое.</string>
+
+    <string name="help_topic_navigation">Управление без экрана</string>
+    <string name="help_navigation_p1">После открытия экрана фокус ставится на первый действующий пункт. Скринридер сообщает его название, номер и общее число пунктов.</string>
+    <string name="help_navigation_p2">Команды «предыдущий» и «следующий» перемещают фокус по порядку. На границе экрана список прокручивается автоматически, поэтому доступны пункты ниже первых пяти строк.</string>
+    <string name="help_navigation_p3">Enter выбирает прочитанный пункт. В статье справки Enter не выполняет опасного действия, а просто повторяет текущий абзац.</string>
+    <string name="help_navigation_p4">Back или Escape возвращает на один уровень назад. Из статьи вы вернётесь к разделам справки, затем в главное меню, а оттуда в заводскую оболочку.</string>
+    <string name="help_navigation_p5">Home и End переходят к началу и концу списка. Page Up и Page Down перемещают фокус на пять пунктов, если эти клавиши доступны в вашей раскладке.</string>
+
+    <string name="help_topic_installation">Установка приложений</string>
+    <string name="help_installation_p1">Скопируйте APK во внутреннюю папку Download. Обычный путь Android: /sdcard/Download. Файл должен лежать прямо в этой папке, а не в подпапке.</string>
+    <string name="help_installation_p2">Откройте «Установка приложений». Поиск идёт в фоне. Готовый список содержит название, имя файла, пакет, версию и размер каждого APK.</string>
+    <string name="help_installation_p3">Файлы XAPK, APKS, ZIP и повреждённые APK не устанавливаются. Если файл имеет расширение APK, но Android не может его разобрать, диспетчер посчитает его некорректным и пропустит.</string>
+    <string name="help_installation_p4">После выбора сначала открывается предупреждение диспетчера. Фокус стоит на «Отмена». Перейдите на «Продолжить» только после проверки названия файла, пакета и версии.</string>
+    <string name="help_installation_p5">Диспетчер копирует APK в закрытый кэш и повторно проверяет пакет и код версии. Большой файл может готовиться несколько секунд; в это время дождитесь сообщения системного установщика.</string>
+    <string name="help_installation_p6">В системном окне Android выберите «Установить» или «Обновить». Без этого подтверждения установка не начнётся. Кнопка «Отмена» оставляет текущее приложение без изменений.</string>
+    <string name="help_installation_p7">После возврата прозвучит результат. Сам APK остаётся в Download, поэтому его можно использовать повторно или удалить обычным файловым менеджером, когда он больше не нужен.</string>
+
+    <string name="help_topic_launching">Запуск приложений</string>
+    <string name="help_launching_p1">Раздел «Выбрать и запустить» собирает программы автоматически. Для каждого пункта сообщаются название и точное имя пакета.</string>
+    <string name="help_launching_p2">Выберите прочитанное приложение и нажмите Enter. Диспетчер откроет его обычный запускаемый экран Android.</string>
+    <string name="help_launching_p3">Новое приложение появляется в списке только тогда, когда в его APK предусмотрен запускаемый экран. Службы, библиотеки и некоторые системные компоненты в списке не показываются.</string>
+    <string name="help_launching_p4">Доступность запущенной программы зависит от её разработчика. Диспетчер может открыть приложение, но не может исправить неподписанные кнопки, сенсорное управление или другие недостатки чужого интерфейса.</string>
+
+    <string name="help_topic_uninstalling">Удаление приложений</string>
+    <string name="help_uninstalling_p1">Раздел «Удалить» скрывает системные приложения, заводскую оболочку, сам диспетчер и пакеты SELVAS или HIMS. Это снижает риск повредить основные функции eMotion.</string>
+    <string name="help_uninstalling_p2">Защитный фильтр не оценивает ценность ваших данных. Перед удалением проверьте, нужны ли вам документы, учётная запись, загрузки или настройки выбранной программы.</string>
+    <string name="help_uninstalling_p3">Первое предупреждение принадлежит диспетчеру, и фокус в нём стоит на «Отмена». После «Продолжить» Android показывает второе, системное подтверждение.</string>
+    <string name="help_uninstalling_p4">Удаление стирает приложение и его локальные данные. Файлы в общих папках могут сохраниться, но рассчитывать на это без резервной копии нельзя.</string>
+    <string name="help_uninstalling_p5">После возврата диспетчер проверяет, остался ли пакет на устройстве, и сообщает результат. Повторная установка APK создаёт приложение заново, но не восстанавливает удалённые настройки.</string>
+
+    <string name="help_topic_permissions">Разрешения и личные данные</string>
+    <string name="help_permissions_p1">Разрешение на просмотр установленных пакетов нужно для автоматических списков запуска и удаления. Без него Android может скрыть часть приложений.</string>
+    <string name="help_permissions_p2">На Android 11 и новее автоматический поиск чужих APK в Download требует системного разрешения «Доступ ко всем файлам». Название широкое, но диспетчер читает только обычные APK, лежащие прямо в Download.</string>
+    <string name="help_permissions_p3">Разрешение «Установка неизвестных приложений» позволяет открыть системный установщик от имени диспетчера. Оно не отменяет отдельную кнопку «Установить» для каждого APK.</string>
+    <string name="help_permissions_p4">Разрешение на удаление также открывает только системное подтверждение. Тихо удалить программу без вашего ответа диспетчер не может.</string>
+    <string name="help_permissions_p5">У диспетчера нет разрешений на интернет, контакты, камеру, микрофон и местоположение. Он не отправляет список программ или имена APK в сеть.</string>
+    <string name="help_permissions_p6">Если вы отказали в специальном разрешении, установка останется недоступной, но запуск, удаление, справка и выход продолжат работать. Разрешение можно выдать позже через настройки Android.</string>
+
+    <string name="help_topic_security">Безопасность и совместимость APK</string>
+    <string name="help_security_p1">Расширение APK само по себе не делает файл безопасным. Не устанавливайте программы из случайных ссылок, писем и неизвестных чатов.</string>
+    <string name="help_security_p2">Диспетчер проверяет, что Android распознаёт пакет, и защищает файл от подмены во время подготовки. Это не антивирус: репутация автора APK не проверяется.</string>
+    <string name="help_security_p3">Системный установщик проверяет подпись пакета. Обновление уже установленной программы обычно возможно только APK с той же подписью; при несовпадении Android откажет.</string>
+    <string name="help_security_p4">APK может требовать более новую версию Android, другой процессор или функции, которых нет в eMotion. В таком случае установка завершится ошибкой либо программа не запустится.</string>
+    <string name="help_security_p5">Для системного установщика создаётся временная внутренняя копия APK. Закрытый провайдер отдаёт только этот файл и только на чтение, а после результата копия удаляется.</string>
+    <string name="help_security_p6">Не пытайтесь через диспетчер заменять заводские системные APK и оболочку. Ошибка в системном компоненте может потребовать сброса устройства или обращения в сервис.</string>
+
+    <string name="help_topic_troubleshooting">Если что-то не работает</string>
+    <string name="help_troubleshooting_p1">Если список APK пуст, проверьте папку Download, расширение файла и выданное разрешение на доступ к файлам. APK из подпапки в список не попадёт.</string>
+    <string name="help_troubleshooting_p2">Если файл назван APK, но пропущен как некорректный, скопируйте его заново из доверенного источника. Неполная загрузка и повреждение файла встречаются чаще всего.</string>
+    <string name="help_troubleshooting_p3">Если системное окно не устанавливает программу, проверьте разрешение на неизвестные приложения, свободное место, версию Android и подпись уже установленного пакета.</string>
+    <string name="help_troubleshooting_p4">Если приложение установилось, но не появилось в списке запуска, у него может не быть запускаемого экрана. Это нормально для служб, дополнений и библиотек.</string>
+    <string name="help_troubleshooting_p5">Если пропала речь, проверьте громкость и штатный скринридер eMotion. Три коротких нажатия Home обычно переключают речевой вывод на проверенной прошивке.</string>
+    <string name="help_troubleshooting_p6">Если фокус оказался не там, где ожидалось, нажмите Back, снова откройте раздел и дождитесь первого пункта. Не нажимайте Enter, пока скринридер не назвал выбранное действие.</string>
+    <string name="help_troubleshooting_p7">Если заводское меню не открылось, нажмите системную Home. При повторяющихся ошибках прекратите установку и проверьте устройство по USB с помощью ADB или обратитесь в поддержку.</string>
+
+    <string name="help_topic_about">О диспетчере</string>
+    <string name="help_about_p1">Название приложения — «Диспетчер приложений». Пакет — org.brailleemotion.appmanager. Версия этой справки и приложения — 1.5.</string>
+    <string name="help_about_p2">Приложение рассчитано на Android 8 и новее. Эта сборка проверена на Braille eMotion 40 B340 с Android 12.</string>
+    <string name="help_about_p3">Речь и вывод на брайлевскую строку выполняет штатный ScreenReaderService. В диспетчер не копируются закрытые библиотеки SELVAS или HIMS.</string>
+    <string name="help_about_p4">В заводском разделе «Онлайн библиотеки» работает небольшой мост com.selvashc.shortcut.appmanager. Он не показывает собственного экрана, а сразу открывает доступный диспетчер.</string>
+
+    <string name="uninstall_question">Удалить приложение?</string>
+    <string name="uninstall_warning">Приложение «%1$s» и его локальные данные будут удалены. После продолжения Android покажет системное подтверждение.\n\nПакет: %2$s</string>
+    <string name="continue_action">Продолжить</string>
+    <string name="cancel_action">Отмена</string>
+    <string name="cancel_uninstall_description">Предупреждение: %1$s Отмена. Пункт 1 из 2. Нажмите Enter, чтобы ничего не удалять.</string>
+    <string name="continue_uninstall_description">Продолжить. Пункт 2 из 2. Нажмите Enter, чтобы открыть системное подтверждение Android.</string>
+    <string name="uninstall_requested">Подтвердите удаление в системном окне.</string>
+    <string name="uninstall_complete">Удалено: %1$s.</string>
+    <string name="uninstall_not_complete">Удаление не выполнено: %1$s.</string>
+    <string name="uninstall_failed">Не удалось открыть системное удаление для %1$s.</string>
+
+    <string name="install_question">Установить приложение?</string>
+    <string name="install_warning">Будет подготовлено приложение «%1$s». После продолжения Android покажет обязательное системное подтверждение.\n\nФайл: %2$s\nПакет: %3$s\nВерсия: %4$s\nРазмер: %5$s\nИсточник: стандартная папка Download.</string>
+    <string name="cancel_install_description">Предупреждение: %1$s Отмена. Пункт 1 из 2. Нажмите Enter, чтобы ничего не устанавливать.</string>
+    <string name="continue_install_description">Продолжить. Пункт 2 из 2. Нажмите Enter, чтобы подготовить APK и открыть системное подтверждение Android.</string>
+    <string name="preparing_apk">Подготовка APK для системного установщика. Подождите.</string>
+    <string name="apk_prepare_failed">Не удалось безопасно подготовить APK приложения %1$s. Проверьте файл и свободное место.</string>
+    <string name="install_requested">Подтвердите установку в системном окне Android.</string>
+    <string name="install_complete">Установлено: %1$s.</string>
+    <string name="install_not_complete">Установка не выполнена: %1$s.</string>
+    <string name="install_failed">Не удалось открыть системную установку для %1$s.</string>
+
+    <string name="download_permission_title">Доступ к папке Download</string>
+    <string name="download_permission_message">Для автоматического списка APK Android должен разрешить Диспетчеру приложений доступ к файлам. Приложение использует это разрешение только для чтения файлов APK непосредственно из стандартной папки Download.</string>
+    <string name="install_source_permission_title">Разрешение на установку</string>
+    <string name="install_source_permission_message">Android должен разрешить установку приложений из Диспетчера приложений. Каждая установка всё равно потребует отдельного системного подтверждения.</string>
+    <string name="cancel_permission_description">%1$s Отмена. Пункт 1 из 2. Нажмите Enter, чтобы не открывать настройки.</string>
+    <string name="continue_permission_description">Открыть настройки. Пункт 2 из 2. Нажмите Enter, затем разрешите доступ для Диспетчера приложений.</string>
+    <string name="install_permission_not_granted">Разрешение не предоставлено. Установка приложений недоступна.</string>
+    <string name="permission_settings_failed">Не удалось открыть системные настройки разрешения.</string>
+
+    <string name="factory_launcher_failed">Не удалось открыть заводское меню.</string>
+    <string name="navigation_hint">Стрелки: перемещение. Enter или пробел: выбрать. Home и End: начало и конец. Назад или Escape: предыдущее меню.</string>
+</resources>

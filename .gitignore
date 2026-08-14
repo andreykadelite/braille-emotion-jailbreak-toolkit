@@ -1,0 +1,42 @@
+# Local build environments and Python caches
+.build-venv/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Android and Windows build output
+app-manager/build/
+app-manager/app-manager.apk
+generated-shortcuts/
+windows-installer/build/
+windows-installer/dist/
+windows-installer/installer.ico
+windows-installer/*.build/
+windows-installer/*.dist/
+windows-installer/*.onefile-build/
+release-assets/
+
+# Signing material and local settings
+*.keystore
+*.jks
+*.p12
+*.pfx
+local.properties
+.env
+.env.*
+
+# Editors and operating systems
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Test reports and logs
+*.log
+*-report.json
+coverage.xml
+htmlcov/
