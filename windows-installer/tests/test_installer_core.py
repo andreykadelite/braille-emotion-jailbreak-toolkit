@@ -202,7 +202,7 @@ class PayloadTests(unittest.TestCase):
             expected = hashlib.sha256(content).hexdigest().upper()
             with patch.dict(RESOURCE_HASHES, {"only.bin": expected}, clear=True):
                 verified = verify_payload(base)
-            self.assertEqual(verified["only.bin"], base / "only.bin")
+            self.assertEqual(verified["only.bin"], (base / "only.bin").resolve())
 
     def test_verify_payload_blocks_tampering(self) -> None:
         with tempfile.TemporaryDirectory() as folder:
